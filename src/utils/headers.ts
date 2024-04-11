@@ -12,11 +12,15 @@ const blacklistedHeaders = [
   'cf-ray',
   'cf-visitor',
   'cf-ew-via',
+  'cdn-loop',
+  'x-amzn-trace-id',
+  'cf-ipcountry',
   'x-forwarded-for',
   'x-forwarded-host',
   'x-forwarded-proto',
   'forwarded',
   'x-real-ip',
+  'content-length',
   ...Object.keys(headerMap),
 ];
 
